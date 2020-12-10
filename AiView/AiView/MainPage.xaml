@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ai="clr-namespace:AiForms.Renderers;assembly=SettingsView"     
+             xmlns:local="clr-namespace:AiView"
+             x:Class="AiView.MainPage">
+
+    <StackLayout>
+        <!--<ai:SettingsView>
+            <ai:Section Title="Main Cities" TextColor="Purple" ItemsSource="{Binding Items}">
+                <ai:Section.ItemTemplate>
+                    <DataTemplate>
+                        <ai:LabelCell ValueText="{Binding Title}" ValueTextColor="Aqua" />
+                    </DataTemplate>
+                </ai:Section.ItemTemplate>
+            </ai:Section>
+            <ai:Section Title="Other ones" TextColor="Purple">
+
+            </ai:Section>
+        </ai:SettingsView>-->
+
+        <local:Settings Items="{Binding Items}"/>
+
+
+    </StackLayout>
+
+</ContentPage>
